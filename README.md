@@ -1,0 +1,2 @@
+# JavaScript model
+ javascript
