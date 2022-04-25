@@ -1,0 +1,133 @@
+*,*::before,*::after {
+	margin:0;
+	padding:0;
+	box-sizing:bordr-box;
+}
+html {
+	font-size:16px;
+}
+:root {
+	--primary:#bd4888;
+	--primary-dark:#5e255a;
+	--grey-light:#f1f55f9;
+	--grey:#264571;
+	--fluid-width:90vw;
+	--max-width:1170px;
+	--clr-black:rgb(115, 61, 61);
+	--clr-black:#fff;
+	--letter-spacing:2px;
+	--border-radius:0.15rem;
+	--shadow-light:0 5px 15px rgba(0,0,0,0.1);
+	--shadow-light:0 5px 15px rgba(0,0,0,0.2);
+}
+body {
+	line-height:1.5;
+	background:var(--grey-light);
+	color:var(--grey-dark);
+	font-family:"Lato",sans-serif;
+  position:relative;
+	text-align: center;
+  border-top:130px;
+}
+img {
+	display:block;
+	width:100%;
+	max-width:700px;
+	height:auto;
+	-o-object-fit:cover;
+	object-fit:cover;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  margin-top:6rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+.btn {
+  text-transform: uppercase;
+  background: var(--clr-primary);
+  color: var(--clr-white);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-weight: 900;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.btn-pink {
+	color:#FFF;
+	background-color:#FA8072;
+	border:#FA8072;
+}
+
+.btn-close {
+	background-color:#FA8072;
+	position:absolute;
+	top:10px;
+	right:10px;
+	font-size:1rem;
+	border-radius:50%;
+	color:#FFF;
+}	
+
+.btn:hover {
+  color: #FFF;
+  background: #CD5C5C;
+  transform:translateY(-2px);
+}
+
+.card-container {
+  border:2px solid transparent;
+  border-color:#333;
+  text-align:center;
+  background-color:#fff;
+  padding:1.5rem 2rem;
+  max-width:30rem;
+  position:relative;
+  margin:3rem auto;
+  visibility:hidden;
+  z-index:1001;
+}
+
+.overlay {
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0.5;
+  height:100%;
+  width :100%;
+  z-index:1000;
+  visibility:hidden;
+  transition:all 0.5s ease; 
+  background-color:rgba(0,0,0,0.35);  
+}
+
+.show {
+	transform:translateY(30px);
+	visibility:visible;
+}
